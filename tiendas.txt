@@ -1,0 +1,15 @@
+D1Laureles,Colombia,6.23457,-75.58132
+D1Estadio,Colombia,6.24931,-75.57014
+D1Belén,Colombia,6.26708,-75.56435
+D1Envigado,Colombia,6.17123,-75.58291
+D1Poblado,Colombia,6.20528,-75.56719
+D1Centro,Colombia,6.24611,-75.56889
+D1Castilla,Colombia,6.28512,-75.55987
+D1Robledo,Colombia,6.29876,-75.58743
+D1BuenosAires,Colombia,6.24032,-75.57561
+D1Manrique,Colombia,6.27394,-75.55203
+D1Aranjuez,Colombia,6.25817,-75.56128
+D1Floresta,Colombia,6.23019,-75.57845
+D1Guayabal,Colombia,6.21854,-75.59320
+D1Itagüí,Colombia,6.16256,-75.60183
+D1Sabaneta,Colombia,6.14589,-75.61027
