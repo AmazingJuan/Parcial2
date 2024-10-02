@@ -3,19 +3,19 @@
 #include <string>
 #include <vector>
 #include "tienda.h"
+#include "nodo.h"
 
 class Grafo{
     private:
-        vector<Tienda> tabla_tiendas;
-        int index_sur;
-        int index_norte;
-        float** matriz_adjacencia;
+        vector<Nodo*> nodos_tiendas; //Vector para almacenar los nodos que contienen las tiendas.
+        float** matriz_adjacencia; //Matriz donde se almacenarán los pesos.
+        //Indices correspondientes a la tienda sur y la tienda norte..
+        const int index_sur = 16;
+        const int index_norte = 0;
     public:
-        vector<vector<Tienda>> caminos_norte;
-        vector<vector<Tienda>> caminos_sur;
-        Grafo(const vector<vector<string>> &datos);
-        void dijkstra(int index);
-        
+        Grafo(const vector<vector<string>> &datos); //Constructor.
+        ~Grafo(); //Destructor
+        int encontrarMinimo(vector<int> &lista, int indice_actual); //Funcion para encontrar la tienda de minima distancia a una tienda dada.
+        void optimizarLogistica(); //Función que hace una aproximación del problema del agente viajero con dos origenes, e imprime los resultados.      
 };
-
 #endif //GRAFO_H

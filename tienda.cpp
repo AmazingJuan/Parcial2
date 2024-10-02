@@ -1,5 +1,8 @@
 #include "tienda.h"
 #include <cmath>
+const double PI = 3.14159265358979323846;
+const double RADIO_TIERRA = 6371.0; // Radio de la Tierra en kilómetros
+
 Tienda::Tienda(string nombre, string barrio, float latitud, float longitud): nombre(nombre), barrio(barrio), latitud(latitud), longitud(longitud){}
 
 const string &Tienda::getNombre() const
@@ -9,17 +12,16 @@ const string &Tienda::getNombre() const
 
 float getDistance(const Tienda &tienda1, const Tienda &tienda2)
 {
-    double lat1_rad = tienda1.latitud * M_PI / 180.0;
-    double lat2_rad = tienda2.latitud * M_PI / 180.0;
-    double delta_lat = (lat2_rad - lat1_rad) * M_PI/180.;
-    double delta_lon = (tienda1.longitud - tienda2.longitud) * M_PI / 180.0;
+    double lat1 = tienda1.latitud * PI / 180.0;
+    double lon1 = tienda1.longitud * PI / 180.0;
+    double lat2 = tienda2.latitud * PI / 180.0;
+    double lon2 = tienda2.longitud * PI / 180.0;
 
-    double a = sin(delta_lat / 2) * sin(delta_lat / 2) +
-               cos(lat1_rad) * cos(lat2_rad) *
-               sin(delta_lon / 2) * sin(delta_lon / 2);
-    double c = 2 * atan2(sqrt(a), sqrt(1 - a));
+    double dlon = lon2 - lon1;
+    double dlat = lat2 - lat1;
 
-    double distance_km = 6371.0 * c;
+    double a = std::sin(dlat/2) * std::sin(dlat/2) + std::cos(lat1) * std::cos(lat2) * std::sin(dlon/2) * std::sin(dlon/2);
+    double c = 2 * std::atan2(std::sqrt(a), std::sqrt(1-a));
 
-    return distance_km * 1000;
+    return RADIO_TIERRA * c;
 }

@@ -1,3 +1,4 @@
+D1Norte,Colombia,6.20000,-75.57000
 D1Laureles,Colombia,6.23457,-75.58132
 D1Estadio,Colombia,6.24931,-75.57014
 D1Belén,Colombia,6.26708,-75.56435
@@ -13,3 +14,4 @@ D1Floresta,Colombia,6.23019,-75.57845
 D1Guayabal,Colombia,6.21854,-75.59320
 D1Itagüí,Colombia,6.16256,-75.60183
 D1Sabaneta,Colombia,6.14589,-75.61027
+D1Sur,Colombia,6.30000,-75.57000

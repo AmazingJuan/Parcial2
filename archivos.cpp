@@ -22,11 +22,13 @@ bool Archivo::leerArchivo()
 
 vector<string> Archivo::procesarCadena(const string &cadena) const
 {
-    bool finished = 0;
-    vector<string> datos;
-    unsigned short cont = 0;
-    string stringAux = "";
+    bool finished = 0; //Booleano que indica si ya se ha terminado de procesar la cadena o no
+    vector<string> datos; //Vector donde se almacenarán los datos de la cadena.
+    unsigned short cont = 0; //Contador auxiliar.
+    string stringAux = ""; //String auxiliar.
     while(!finished){
+        //Loop que va a procesar la cadena, metiendo datos al vector de datos si es que se encuentra
+        //una coma, o bien se termina la cadena.
         if(cadena.at(cont) == ',' || cont == cadena.length() - 1){
             if(cont == cadena.length() - 1) {
                 finished = true;
@@ -39,7 +41,7 @@ vector<string> Archivo::procesarCadena(const string &cadena) const
         
         cont += 1;
     }
-    return datos;
+    return datos; //Se devuelven los datos extraidos.
 }
 
 const vector<vector<string>> &Archivo::getDatos() const

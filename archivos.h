@@ -6,13 +6,13 @@ using namespace std;
 #include <fstream>
 class Archivo{
     private:
-        string nombre;
-        vector<vector<string>> datos;
+        string nombre; //Nombre del archivo que se queire abrir
+        vector<vector<string>> datos; //Datos extraidos de cada linea de texto del archivo.
     public:
-        Archivo(const string&nombre);
-        bool leerArchivo();
-        vector<string> procesarCadena(const string&cadena) const;
-        const vector<vector<string>> &getDatos() const;
+        Archivo(const string&nombre); //Constructor.
+        bool leerArchivo(); //Función que permite leer el archivo.
+        vector<string> procesarCadena(const string&cadena) const; //Procesa cada linea de texto y obtiene los datos necesarios.
+        const vector<vector<string>> &getDatos() const; //Getter para los datos extraidos.
 };
 
-#endif
+#endif //ARCHIVOS_H
