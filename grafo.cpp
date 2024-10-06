@@ -92,9 +92,9 @@ void Grafo::optimizarLogistica(){
     distancia1 *= 2;
     distancia2 *= 2;
     cout << "--------Optimizacion de logistica D1--------" << endl << endl;
-    cout << "Ruta Norte: " << camino_norte << endl << "Distancia recorrida (ida y vuelta): " << distancia1 << endl << endl;
-    cout << "Ruta Sur: " << camino_sur << endl << "Distancia recorrida (ida y vuelta): " << distancia2 << endl;
-    cout << "Distancia total recorrida por ambos camiones: " << distancia1 + distancia2 << endl << endl;
+    cout << "Ruta Norte: " << camino_norte << endl << "Distancia recorrida (ida y vuelta): " << distancia1 << " km" << endl << endl;
+    cout << "Ruta Sur: " << camino_sur << endl << "Distancia recorrida (ida y vuelta): " << distancia2 << " km" << endl;
+    cout << "Distancia total recorrida por ambos camiones: " << distancia1 + distancia2  << " km" << endl << endl;
     cout << "Tiempo utilizado para encontrar las rutas: " << duracion.count() << " milisegundos." << endl;
 }
 
