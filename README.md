@@ -54,7 +54,7 @@ _Las siguientes personas hicieron parte de la creación de la implementación:_
 * **Maria Acevedo** - *Codificación y documentación*
 * **Juan Pablo Avendaño** - *Codificación y documentación*
 
-_Video explicación de la solución: [video](https://youtu.be/5NYxdDYDnis)_
+_Video explicación de la [solucion](https://youtu.be/5NYxdDYDnis)_
 
 ---
 Muchas gracias por su atención
